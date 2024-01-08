@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul {
+    width: 500px;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: rgba(18, 140, 126, 0.75);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#messageText {
+    width: 400px;
+    height: 32px;
+    font-size: 16px;
+}
+
+a {
+    text-align: center;
+    border-radius: 5px;
+    width: 75px;
+    display: block;
+    margin: 20px auto 0;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #075E54;
+    color: #fff;
+}
+
+.gerzson-message {
+    background-color: #fff;
+    color: black;
+}

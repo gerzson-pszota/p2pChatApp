@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Budget WhatsApp</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<h1>Budget WhatsApp</h1>
+
+<div th:if="${error}" class="error" style="color: red;">
+    <p th:text="${error}"></p>
+</div>
+
+<form th:action="@{/update}" method="post">
+    <label for="clientId">Your username: </label>
+    <input type="text" id="clientId" name="clientId"/>
+    <button type="submit">Update</button>
+</form>
+
+<ul>
+    <li th:each="message : ${messages}" th:class="${message.clientId eq 'Gerzson'} ? 'gerzson-message' : ''">
+        <span th:text="${message.clientId}"></span><br>
+        <span th:text="${message.text}"></span>
+    </li>
+</ul>
+
+<form th:action="@{/send}" method="post">
+    <input type="textText" id="messageText" name="messageText" autofocus/>
+    <button type="submit">Send</button>
+</form>
+
+<a href="http://localhost:8080/">Refresh</a>
+
+</body>
+</html>

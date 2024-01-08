@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>P2P Chat App - Register</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Enter</h1>
+
+<form action="/register" method="post" th:object="${user}">
+    <label for="username">Choose your name:</label>
+    <input type="text" id="username" name="username" th:field="*{clientId}" required>
+    <span th:if="${error}" th:text="${error}" style="color: red"></span>
+    <br>
+    <button type="submit">Enter</button>
+</form>
+
+</body>
+</html>
